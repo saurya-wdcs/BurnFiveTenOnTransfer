@@ -109,8 +109,8 @@ function findFivePercent(uint256 value) public view returns (uint256)  {
 
 function findTenPercent(uint256 value) public view returns (uint256)  {
   uint256 roundValue = value.ceil(basePercent);
-  uint256 FivePercent = roundValue.mul(basePercent).div(1000);
-  return FivePercent;
+  uint256 TenPercent = roundValue.mul(basePercent).div(1000);
+  return TenPercent;
 }
 
 function transfer(address to, uint256 value) public returns (bool) {
